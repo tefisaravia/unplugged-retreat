@@ -87,6 +87,157 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* === Base Styles ===*/
+
+header,
+footer {
+  align-items: center;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+header .content-wrapper{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* === Header Styles ===*/
+header nav {
+  display:flex;
+  justify-content: space-around;
+
+}
+header nav ul{
+  display:flex;
+  align-content: space-around;
+  list-style-type: none;
+}
+
+.hero-area{
+  align-items: flex-start;
+  display:flex;
+  justify-content: flex-start;
+}
+
+aside{
+  align-content: flex-start;
+  align-items: center;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  
+}
+.form-description{
+
+}
+
+.form{
+
+}
+
+/* === Features Section Styles ===*/
+.features{
+  align-content: space-between;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
+}
+
+.features-items{
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.awesome-icon{
+
+}
+
+.features-items-description{
+
+}
+/* === Reviews Section Styles ===*/
+.reviews{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.reviews article{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/* === Footer Styles ===*/
+.footer-content{
+  display:flex;
+}
+
+.contact{
+
+}
+
+.social{
+  display:flex;
+}
+
+.social-icons{
+  align-content: space-around;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* === Text Styles ===*/
+
+h1{
+
+}
+
+h3{
+
+}
+
+p{
+
+}
+
+/* === About Styles ===*/
+.mission{
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.mission-content{
+  justify-content: space-around;
+  display: flex;
+}
+
+.contact-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.contact-content{
+  display: flex;
+  justify-content: space-around;
+}
+/* === FAQ Styles ===*/
+.faq{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+  display: flex;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
