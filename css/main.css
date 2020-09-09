@@ -95,24 +95,41 @@ footer {
   display:flex;
   flex-flow: row wrap;
   justify-content: center;
+  width:100%;
+}
+
+header{
+  padding: 15px 0;
+}
+header-divider{
+ width: 100%;
+}
+
+.content-wrapper {
+  margin-left: 15px;
+  width: 100%;
 }
 
 header .content-wrapper{
   align-items: center;
   display: flex;
   justify-content: center;
+  width: 60%
 }
 
 /* === Header Styles ===*/
 header nav {
   display:flex;
-  justify-content: space-around;
+  justify-content: center;
+  width:60%
 
 }
 header nav ul{
   display:flex;
   align-content: space-around;
   list-style-type: none;
+  padding: 0;
+  width:40%;
 }
 
 .hero-area{
@@ -122,35 +139,49 @@ header nav ul{
 }
 
 aside{
-  align-content: flex-start;
+  
   align-items: center;
   display:flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  
-}
-.form-description{
-
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 15px;
 }
 
 .form{
+ display: flex;
+ flex-flow: column wrap;
+}
 
+.form input{
+  margin: 5px 0;
 }
 
 /* === Features Section Styles ===*/
 .features{
   align-content: space-between;
   display:flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: flex-start;
+}
 
+.features h1{
+  margin: 0 15px;
+}
+
+
+.features .content-wrapper{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: center;
 }
 
 .features-items{
   align-items: center;
   display: flex;
   flex-flow: row wrap;
+  width: 60%
 }
+
 
 .awesome-icon{
 
@@ -162,7 +193,8 @@ aside{
 /* === Reviews Section Styles ===*/
 .reviews{
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  margin: 0 15px;
 }
 
 .reviews article{
@@ -171,12 +203,21 @@ aside{
   justify-content: center;
 }
 /* === Footer Styles ===*/
-.footer-content{
+footer{
   display:flex;
+  flex-flow: column wrap;
+}
+footer .content-wrapper{
+  align-items: center;
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: center; 
+  margin: 50px 0;
+  width: 55%;
 }
 
-.contact{
-
+.contact p{
+  line-height: 1.5px;
 }
 
 .social{
@@ -220,13 +261,14 @@ p{
 
 .contact-section {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 .contact-content{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+
 }
 /* === FAQ Styles ===*/
 .faq{
