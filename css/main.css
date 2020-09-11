@@ -175,7 +175,7 @@ footer .copyright {
 .hero-area{
   align-items: flex-start;
   display:flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 /* Aside */
@@ -198,10 +198,11 @@ aside{
 
 /* Features */
 
-.features{
-  display:flex;
-  flex-flow: column wrap;
+.features .content-wrapper{
+  display: flex;
+  flex-flow:row wrap;
   justify-content: center;
+  margin-right: 0;
 }
 
 .features h2 {
@@ -211,12 +212,6 @@ aside{
 .features article {
   margin: 30px 0;
   width: 63%;
-}
-
-.features .content-wrapper{
-  display:flex;
-  flex-flow:row wrap;
-  justify-content: center;
 }
 
 .features-items{
@@ -427,99 +422,119 @@ aside{
     width: 40%;
   }
 
-     /* Features */
-     .features article {
-      align-items: center;
-      display: flex;
-      flex-basis: 50%;
-      flex-flow: column wrap;
-      justify-content: center;
+  /* Features */
+  .features article {
+    align-items: center;
+    display: flex;
+    flex-basis: 50%;
+    flex-flow: column wrap;
+    justify-content: center;
     }
 
-    .features .features-items-description {
-      width: 50%;
-    }
+  .features .features-items-description {
+    width: 62%;
+  }
 
-    /* Reviews */
-    .reviews article {
-      display: flex;
-      justify-content: space-between;
-    }
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
   
-    .reviews article div {
-      width: 49%;
-    }
+  .reviews article div {
+    width: 49%;
+  }
 
-    /* Footer */
+  /* Footer */
   footer .content-wrapper{
     align-items: center;
     display:flex;
     justify-content: space-around;
     margin: 100px 0;
     width: 65%;
-}
+  }
+  /* -------------------- About Page -------------------- */
 
-/* ==========================================================================
-     About Page
-     ========================================================================== */
+  .mission-content {
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
 
-.mission-content{
-  align-items: center;
-  display:flex;
-  justify-content: space-around;
-  padding-top: 20px;
-}
+  .mission-content p {
+    width: 45%;
+  }
 
-.mission-content p {
-  width: 45%;
-}
+  .contact-content{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.contact-content{
-  align-items: flex-start;
-  display: flex;
-  justify-content: space-around;
-}
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
 
-.contact-section .content-wrapper h2 {
-  width: 80%;
-}
+  /* -------------------- FAQ Page -------------------- */
 
-/* ==========================================================================
-     FAQ Page
-     ========================================================================== */
-
-.faq .content-wrapper{
-  align-items: flex-start;
-  display: flex;
-  justify-content: space-around;
-}
-.faq h2{
-  width:100%;
-}
-.faq-question{
-  flex-basis: 45%;
+  .faq .content-wrapper{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
+  }
+  .faq h2{
+    width:100%;
+  }
+  .faq-question{
+    flex-basis: 45%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   /* Styles for Desktop */
 
+   /* General styles */
   .content-wrapper{
-    max-width: 1000px;
-    margin: 100px 0;
+    max-width: 960px;
   }
-  .features .content-wrapper .features-items{
+   /* Hero Area */
+  .hero-area h1 {
+    width: 60%;
+  }
+ /* Aside */
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+        width: 30%;
+    }
+
+ /* Features */
+
+  .features .features-items{
     justify-content: space-between;
   }
   .features .content-wrapper h2{
-    width: 100%;
+    width: 90%;
   }
   .features-items article{
-    width: 30%;
+    flex-basis: 33%;
   }
-  .contact-section h2{
-    width: 100%;
+
+  /* Reviews */ 
+  .reviews article div {
+    width: 42%;
   }
 }
+
+/* -------------------- About Page -------------------- */
+  .mission h2, 
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+}
+
+
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 1.25dppx),
