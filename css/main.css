@@ -130,7 +130,7 @@ header nav {
 }
 header nav ul{
   display:flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style-type: none;
   width: 100%;
 }
@@ -375,51 +375,157 @@ aside{
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+  Media Queries for Responsive Design.
+   These will override the primary ('mobile first') styles.
+
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
   /* Styles for Tablets */
-
-  header{
-    flex-flow: row nowrap;
-  }
-
+  
+   /* General styles */
   .content-wrapper{
     max-width: 640px;
     margin: 100px 0;
   }
-  .features .content-wrapper{
-    justify-content: space-evenly;
-  }
-  .features-items{
-    width: 40%
-  }
+    /* Header */
 
-  aside{
+    header {
+      justify-content: space-around;
+      padding: 33px 0;
+    }
+  header .content-wrapper{
     flex-flow: row nowrap;
     justify-content: space-around;
+    width: 100%;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+   /* Hero Area */
+  
+    /* Aside */
+  aside .content-wrapper{
+    align-items: center;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 50px 0;
   }
 
   .form-description, .form{
-    width: 30%;
+    margin: 0;
+    width: 40%;
   }
 
+     /* Features */
+     .features article {
+      align-items: center;
+      display: flex;
+      flex-basis: 50%;
+      flex-flow: column wrap;
+      justify-content: center;
+    }
+
+    .features .features-items-description {
+      width: 50%;
+    }
+
+    /* Reviews */
+    .reviews article {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .reviews article div {
+      width: 49%;
+    }
+
+    /* Footer */
   footer .content-wrapper{
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+    margin: 100px 0;
+    width: 65%;
+}
+
+/* ==========================================================================
+     About Page
+     ========================================================================== */
+
+.mission-content{
+  align-items: center;
+  display:flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.mission-content p {
+  width: 45%;
+}
+
+.contact-content{
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+
+/* ==========================================================================
+     FAQ Page
+     ========================================================================== */
+
+.faq .content-wrapper{
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+}
+.faq h2{
+  width:100%;
+}
+.faq-question{
+  flex-basis: 45%;
 }
 
 @media only screen and (min-width: 1200px) {
   /* Styles for Desktop */
-  .features-items{
-    width: 30%
+
+  .content-wrapper{
+    max-width: 1000px;
+    margin: 100px 0;
   }
-
+  .features .content-wrapper .features-items{
+    justify-content: space-between;
+  }
+  .features .content-wrapper h2{
+    width: 100%;
+  }
+  .features-items article{
+    width: 30%;
+  }
+  .contact-section h2{
+    width: 100%;
+  }
 }
-
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
 
 /* ==========================================================================
    Print styles.
