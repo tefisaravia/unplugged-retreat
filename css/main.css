@@ -129,6 +129,14 @@ p {
   line-height: 1.285;
 }
  
+img { 
+	width: 100%;
+}
+ 
+figure {
+  margin: 0;
+}
+
 address {
   font-style: normal;
 }
@@ -153,6 +161,15 @@ header{
   padding: 15px 0;
 
 }
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 header-divider{
   background: #3a3a3a; 
   height: 1px;
@@ -181,6 +198,7 @@ header nav {
 header nav ul{
   display:flex;
   justify-content: space-evenly;
+  padding-left: 0;
   width: 100%;
 }
 
@@ -225,10 +243,17 @@ footer .copyright {
 
 .hero-area{
   align-items: flex-start;
+  background: url("../img/jake-melara-30679-unsplash.jpg") center no-repeat #333;
+  background-size: cover;
   display:flex;
   justify-content: center;
 }
 
+.hero-area .content-wrapper {
+  align-items: flex-start;
+  display: flex;
+  
+}
 h1{
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 2.5em;
@@ -274,6 +299,8 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url("../img/rawpixel-800820-unsplash1.jpg") center no-repeat #333;
+  background-size: cover;
   display: flex;
   flex-flow:row wrap;
   justify-content: center;
@@ -482,13 +509,13 @@ input[type=button] {
     /* Header */
 
   header {
-    justify-content: space-around;
+    justify-content: center;
     padding: 33px 0;
   }
 
   header .content-wrapper{
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
   }
 
@@ -497,12 +524,12 @@ input[type=button] {
   }
 
   header nav {
+    justify-content: space-between;
     width: 20%;
   }
 
   header nav ul {
     justify-content: space-between;
-    padding-left: 0;
   }
 
   .header-divider {
@@ -551,8 +578,9 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
   }
-  
-  .reviews article div {
+
+  .reviews article div,
+  .reviews article figure {
     width: 49%;
   }
 
@@ -643,6 +671,9 @@ input[type=button] {
     padding: 15px 0;
   }
 
+  header figure {
+    width: 20%;
+  }
   .content-wrapper{
     max-width: 960px;
   }
@@ -696,6 +727,10 @@ input[type=button] {
   /* Reviews */ 
   .reviews h2 {
     padding-bottom: 50px; 
+  }
+
+  .reviews article figure {
+    flex-basis: 55%;
   }
 
   .reviews article div {
