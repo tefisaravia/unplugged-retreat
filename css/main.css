@@ -121,6 +121,7 @@ h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: normal;
   margin: 20px 0;
 }
  
@@ -225,9 +226,17 @@ footer .social-icons{
 }
 
 footer .social-icons p {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 100%;
+  display: flex;
+  height: 3em;
+  justify-content: center;
+  width: 3em;
+}
+
+footer .social-icons i{
+  font-size: 1.5em;
 }
 
 footer p{
@@ -252,11 +261,12 @@ footer .copyright {
 .hero-area .content-wrapper {
   align-items: flex-start;
   display: flex;
-  
+  margin: 10px 0 250px 0;
 }
+
 h1{
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 500; 
   line-height: 1.2; 
 }
@@ -323,6 +333,11 @@ input[type=button] {
   text-align:center;
 }
 
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features p {
   margin: 0;
 }
@@ -353,6 +368,22 @@ input[type=button] {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.map figure{
+  height: 0; 
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%; 
+  position: relative;
+}
+
+.map iframe {
+  height: 100%;
+  left: 0; 
+  position: absolute; 
+  top: 0; 
+  width: 100%;
 }
 
 .contact-section {
@@ -486,9 +517,9 @@ input[type=button] {
 
    ========================================================================== */
    
+/* -------------------- Styles for Tablets -------------------- */
 
 @media only screen and (min-width: 768px) {
-  /* Styles for Tablets */
   
    /* General styles */
   .content-wrapper{
@@ -536,10 +567,14 @@ input[type=button] {
     display: none;
   }
    /* Hero Area */
-  .hero-area h1 {
+  .hero-area .content-wrapper{
+    margin: 40px 0 270px 0;
+  }
+
+   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
-    margin: 0;
+    margin:0;
   }
   
     /* Aside */
@@ -593,7 +628,7 @@ input[type=button] {
   footer .content-wrapper{
     align-items: center;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 100px 0;
     width: 65%;
   }
@@ -611,10 +646,14 @@ input[type=button] {
       line-height: 1.285;
   }
 
+  footer .social{
+    width: 35%;
+  }
+
+
   footer .copyright {
     width: 100%;
   }
-
   /* -------------------- About Page -------------------- */
 
   .mission-content {
@@ -662,8 +701,8 @@ input[type=button] {
       line-height: 1.125;
 }
 
+ /* -------------------- Styles for Desktop -------------------- */
 @media only screen and (min-width: 1200px) {
-  /* Styles for Desktop */
 
    /* General styles */
 
@@ -693,9 +732,12 @@ input[type=button] {
   }
 
    /* Hero Area */
-  .hero-area h1 {
+   .hero-area .content-wrapper{
+    margin-bottom: 400px;
+  }
+   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 70%;
   }
 
  /* Aside */
