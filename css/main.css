@@ -164,17 +164,18 @@ header{
 }
 
 header figure {
-  width: 60%;
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
-header-divider{
+.header-divider{
   background: #3a3a3a; 
+  border-top: 1px solid #999;
   height: 1px;
-  margin: 10px 0 20px 0;
+  margin: 15px 0 15px 0;
   width: 100%;
 }
 
